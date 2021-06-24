@@ -29,18 +29,20 @@ def PROMPT_FIELD_COLORS():
 
 
 # https://www.nerdfonts.com/cheat-sheet?set=nf-ple-
-modes = {
-    "powerline": "",  # \uE0b0
-    "round": "",  # \uE0b4
-    "down": "",  # \uE0b8
-    "up": "",  # \uE0bc
-    "flame": "",  # \ue0c0
-    "squares": "",  # \ue0c4
-    "ruiny": "",  # \ue0c8
-    "lego": "",  # \ue0ce
-    "trapezoid": "",  # \ue0d2
-    "honeycomb": "",  # \ue0cc
+emojis = {
+ 'bandage': '🤕',
+ 'cowboy': '🤠',
+ 'drooling': '🤤',
+ 'exploding': '🤯',
+ 'fear': '😱',
+ 'freezing': '🥶',
+ 'nerd': '🤓',
+ 'sneezing': '🤧',
+ 'vomiting': '🤮',
+ "space": " "
 }
+
+modes = {k: v + "/  " for k, v in emojis.items()}
 
 
 @xl.lazyobject
